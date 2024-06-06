@@ -1,0 +1,54 @@
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+body {
+  background-color: #000000;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.FooterSection * {
+  background-color: #fff !important;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.HeroSection {
+  // position: relative;
+  padding-top: 4rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  &__image1 {
+    position: absolute;
+    width: 30rem;
+    background: none;
+    left: 59rem;
+    // z-index: -1;
+    @include respondAt(915px) {
+      display: none;
+    }
+  }
+  &__image2 {
+    position: absolute;
+    width: 30rem;
+    background: none;
+    left: 0rem;
+    @include respondAt(915px) {
+      //   display: none;
+      width: 15rem;
+      left: -1rem;
+    }
+  }
+}
