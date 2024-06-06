@@ -1,0 +1,129 @@
+.HeroSectionContainer {
+  display: flex;
+  justify-content: center;
+  @include respondAt(915px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__left {
+    margin-right: 2rem;
+    @include respondAt(915px) {
+        margin: 0;
+      }
+    &--heading {
+      color: rgba(255, 255, 255, 1);
+      font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      text-align: center;
+
+      font-size: 2.8rem;
+      @include respondAt(915px) {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+    
+    &--description {
+      color: #cccccd;
+      font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+      font-style: normal;
+      text-align: center;
+      padding-left: 5rem;
+      font-weight: 200;
+      width: 36rem;
+      font-size: 1rem;
+      @include respondAt(915px) {
+        font-size: 0.7rem;
+        text-align: center;
+        width: 17rem;
+        margin-left: 1rem;
+      }
+    }
+    &--buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include respondAt(915px) {
+        flex-direction: column;
+        
+      }
+      &__explore {
+        color: black;
+        background-color: white;
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        margin-right: 1rem;
+        font-weight: bold;
+        @include respondAt(915px) {
+          padding: 0.5rem 1.5rem;
+          margin-right: 0;
+          // width:10rem;
+          // height: 2rem;
+          text-align: center;
+        }
+      }
+      &__about {
+        color: white;
+        padding: 1rem 2.8rem;
+        font-size: 1rem;
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        border: 0.5px solid white;
+        font-weight: bold;
+        @include respondAt(915px) {
+            padding: 0.5rem 1.5rem;
+
+          // width:10rem;
+          // height: 2rem;
+          text-align: center;
+        }
+      }
+    }
+    &--sponsors {
+      position: relative;
+      top: 1rem;
+      background: none;
+      @include respondAt(915px) {
+        // display: none;
+        top: 0;
+      }
+      &__text {
+        color: white;
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        font-weight: 500;
+        padding-left: 15rem;
+        font-size: 1rem;
+        background: none;
+      }
+      &__image {
+        width: 20rem;
+        padding-left: 11.5rem;
+        @include respondAt(915px) {
+            width: 20rem;
+        }
+      }
+    }
+  }
+  &__right {
+    margin-top: 2.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--image1 {
+        @include respondAt(915px) {
+            width: 20rem;
+            border-radius: 2rem;
+          }
+      width: 40rem;
+      border-radius: 3rem;
+      padding-top: 7rem
+    }
+    &--below {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+  }
+}
